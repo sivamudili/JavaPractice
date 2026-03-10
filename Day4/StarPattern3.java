@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class StarPattern3 {
+    public static void printingStar(Scanner sc){
+        System.out.println("Enter number of Rows");
+        int n = sc.nextInt();
+        for(int row=0; row<n; row++){
+            for(int coln=0;  coln<(n-row); coln++){
+                 System.out.print("*"+" ");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        printingStar(sc);
+        sc.close();
+    }
+}
