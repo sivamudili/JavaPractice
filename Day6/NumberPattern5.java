@@ -3,7 +3,7 @@ package Day6;
 import java.util.Scanner;
 
 public class NumberPattern5 {
-    public static void printingStar(Scanner sc){
+    public static void printingNumber(Scanner sc){
         System.out.println("Enter number of Rows");
         int n = sc.nextInt();
         for(int i=1, p=0; i<=n; i++, p+=2){
@@ -15,7 +15,7 @@ public class NumberPattern5 {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        printingStar(sc);
+        printingNumber(sc);
         sc.close();
     }
 }
